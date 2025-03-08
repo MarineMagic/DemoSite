@@ -1,0 +1,51 @@
+body{
+    background-color: rgb(152, 201, 185);
+    background-image: url("/Juvenile_Ragdoll.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-image: linear-gradient(black,white);
+}
+mabalise{
+    display:block;
+    font-size:70px;
+    color:brown;
+    font-weight:500;
+    font-style: italic;
+    text-align:center;
+    text-decoration: underline double aqua 3px;
+}
+.mabalise{
+    border: 4px dotted blue;
+    border-radius: 50px;
+    text-transform: capitalize;
+    font-size:50px;
+    color:rgb(134, 42, 165);
+    font-weight:200;
+    text-shadow: /* ou box-shadow pour ombre de zone */
+        5px 5px 2px rgb(0, 0, 0);
+}
+
+.mabalise:hover{
+    font-size:50px;
+    transform: translate(100px,-100px);
+    transition-duration: 2s; /*vitesse de lancement d'animation*/
+}
+@keyframes example
+{
+0% {
+    transform: rotate(0);
+}
+25%{transform: rotate(90deg);}
+50%{transform: rotate(180deg);}
+75%{transform: rotate(270deg);}
+100%{transform: rotate(360deg);}
+}
+#UNIQUE{
+text-align: center;
+animation-name: example;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+animation-direction: normal;
+animation-timing-function: linear;
+}
+
